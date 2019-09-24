@@ -1,22 +1,103 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100%;
+}
+
+.parallaxOne{
+  background-image: url("./images/emp.jpg");
+  padding-top: 95vh;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxTwo{
+  background-image: url("./images/leaves.jpg");
+  padding-top: 40%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content{
   color: white;
+  background-color: #282c34;
+  height: fit-content;
+  padding-top: 1%;
+  padding-bottom: 4%;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+#navbar{
+  background-color: slategray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 2%;
+}
+
+#navbarName{
+  padding-left: 10%;
+  align-self: flex-start;
+  color: white;
+  font-size: 2em;
+}
+
+#navbarLinks{
+  padding-right: 10%;
+  align-self: flex-end;
+  font-size: 1.5em;
+}
+
+#navbarLinks a{
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+}
+
+#navbarLinks a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#projectGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.card{
+  background-color: white;
+  color: #282c34;
+  width: 80%;
+  padding: 5%;
+  border-radius: 6px;
+}
+
+.card img{
+  max-width: 100%;
+}
+
+.card img:hover{
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.card a{
+  color: #282c34;
+  padding: 2%;
+}
+
+.card a:hover{
+  color: #B0B2B5;
 }
