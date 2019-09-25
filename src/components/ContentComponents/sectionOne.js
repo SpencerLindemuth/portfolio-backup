@@ -14,7 +14,8 @@ export default class sectionOne extends React.Component{
                 image: csschool,
                 description: "A website designed to teach CSS basics to people of all ages in an interactive learning environment",
                 url: "https://CSSchool.herokuapp.com",
-                gitUrl: "https://github.com/spencerlindemuth/CSSchool-frontend"
+                gitUrl: "https://github.com/spencerlindemuth/CSSchool-frontend",
+                tech: ["JavaScript", "React", "Ruby On Rails Backend API", "JWT Authentication", "React-Markdown", "CSS", "HTML"]
             },
             {
                 id: 2,
@@ -43,7 +44,7 @@ export default class sectionOne extends React.Component{
     expandedDiv = () => {
         let filter = this.state.projects.filter(project => project.id === this.state.expandedId)
         let filteredProject = filter[0]
-        return <ProjectCard title={filteredProject.title} background={filteredProject.image} id={filteredProject.id} description={filteredProject.description} url={filteredProject.url} gitUrl={filteredProject.gitUrl} moreClick={this.moreClick}/>
+        return <div id="expandedCard"><ProjectCard title={filteredProject.title} background={filteredProject.image} id={filteredProject.id} description={filteredProject.description} url={filteredProject.url} gitUrl={filteredProject.gitUrl} technology={filteredProject.tech}/></div>
     }
 
     render(){

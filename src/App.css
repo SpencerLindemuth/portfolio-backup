@@ -117,3 +117,19 @@
   cursor: pointer;
   opacity: 0.5;
 }
+
+#expandedCard{
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#expandedCard img{
+  max-width: 50%;
+  
+}
+
+.technologyList{
+  list-style-type: none;
+  padding-left: 0;
+}
