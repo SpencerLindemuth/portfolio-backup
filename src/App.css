@@ -1,28 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+
 .App {
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
-.parallaxOne{
+.parallax{
+  padding-top: 75vh;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.One{
+  background-image: url("./images/hello.jpg");
+}
+
+.Two{
   background-image: url("./images/emp.jpg");
-  padding-top: 95vh;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallaxTwo{
-  background-image: url("./images/leaves.jpg");
-  padding-top: 40%;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .content{
@@ -38,15 +39,19 @@
 }
 
 #navbar{
-  background-color: slategray;
+  position: relative;
+  background-color: #6F7D8C;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  box-shadow: 0px 1px 15px black;
   padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #navbarName{
+  font-family: 'Shadows Into Light', cursive;
   padding-left: 10%;
   align-self: flex-start;
   color: white;
@@ -54,20 +59,19 @@
 }
 
 #navbarLinks{
+  height: 100%;
   padding-right: 10%;
   align-self: flex-end;
-  font-size: 1.5em;
+  align-self: center;
 }
 
-#navbarLinks a{
-  text-decoration: none;
-  color: white;
+#navbarLinks img{
   padding-left: 10px;
 }
 
-#navbarLinks a:hover{
-  text-decoration: underline;
+#navbarLinks img:hover{
   cursor: pointer;
+  opacity: 0.5;
 }
 
 #projectGrid{
@@ -86,6 +90,7 @@
 
 .card img{
   max-width: 100%;
+  border: solid 1px black;
 }
 
 .card img:hover{
@@ -100,4 +105,15 @@
 
 .card a:hover{
   color: #B0B2B5;
+}
+
+.more{
+  color: gray;
+  text-decoration: underline;
+  font-size: 80%;
+}
+
+.more:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
