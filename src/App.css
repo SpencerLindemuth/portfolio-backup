@@ -23,7 +23,11 @@
 }
 
 .Two{
-  background-image: url("./images/emp.jpg");
+  background-image: url("./images/two.jpg");
+}
+
+.Three{
+  background-image: url("./images/three.jpg")
 }
 
 .content{
@@ -132,4 +136,27 @@
 .technologyList{
   list-style-type: none;
   padding-left: 0;
+}
+
+#about{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#skillsList{
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+#skillsList li{
+  height: 20vh;
+  border: solid 1px white;
+  border-radius: 6px;
+  margin: 2%;
+}
+
+#skillsList li:hover{
+  border-color: gray;
 }
